@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://crredqloqyo77"]
+
+[ext_resource type="Script" path="res://scripts/UIelements/response_container.gd" id="1_smrrb"]
+[ext_resource type="PackedScene" uid="uid://bpuwp7olsujtb" path="res://scenes/UIelements/response_button.tscn" id="2_c6ycn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7wwfg"]
+
+[node name="ResponseContainer" type="PanelContainer"]
+offset_right = 120.0
+offset_bottom = 120.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7wwfg")
+script = ExtResource("1_smrrb")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 120.0
+
+[node name="ResponseList" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="ResponseButton0" parent="Panel/MarginContainer/ResponseList" instance=ExtResource("2_c6ycn")]
+layout_mode = 2

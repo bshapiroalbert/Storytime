@@ -1,0 +1,27 @@
+{
+	"NPC1" : 
+	{ "Dialog" : 
+		{
+		"Start" : "Hi, welcome to my cabin. Can I get you a drink weary traveller? Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.",
+		"Response A" : "Yes",
+		"Response B" : "No",
+		"A" : "Excellent. Please, go right on inside.",
+		"B" : "As you wish. Safe travels."
+		}
+	},
+	
+	"Party Member 2" :
+	{ "Dialog" :
+		{
+		"Start" : "Can I join you in your quest?",
+		"Response A" : "Of Course!",
+		"Response B" : "Nope",
+		"A" : "Great, I can't wait!",
+		"B" : "Oh well then. Best of luck on your journey."
+		},
+	"Result" :
+		{
+		"A" : "JoinParty"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3down3qi0uoe"]
+
+[ext_resource type="Texture2D" uid="uid://cnqy6asba2ckr" path="res://Textures/Images/Testing/circle.png" id="1_w5nsr"]
+[ext_resource type="Script" path="res://scripts/UIelements/location_button.gd" id="2_c3sxp"]
+
+[node name="LocationButton" type="TextureButton"]
+offset_right = 800.0
+offset_bottom = 800.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("1_w5nsr")
+script = ExtResource("2_c3sxp")

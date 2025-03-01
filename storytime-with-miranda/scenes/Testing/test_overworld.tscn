@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dskjoyskmf5wy"]
+
+[ext_resource type="PackedScene" uid="uid://b3down3qi0uoe" path="res://scenes/UIelements/location_button.tscn" id="1_3tsui"]
+
+[node name="TestOverworld" type="Node2D"]
+
+[node name="LocationButton" parent="." instance=ExtResource("1_3tsui")]

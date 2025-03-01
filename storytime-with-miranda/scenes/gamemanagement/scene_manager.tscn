@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3ogmvj7fbf6n"]
+
+[ext_resource type="Script" path="res://scripts/gamemanagement/scene_manager.gd" id="1_bll2i"]
+
+[node name="SceneManager" type="Node2D"]
+script = ExtResource("1_bll2i")
+Scenes = {
+"TestOverworld": &"res://scenes/Testing/test_overworld.tscn"
+}
+
+[node name="SceneTransition" type="CanvasLayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransition"]
+
+[node name="dissolve_rect" type="ColorRect" parent="SceneTransition"]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
