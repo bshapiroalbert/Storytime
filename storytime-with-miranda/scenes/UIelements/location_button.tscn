@@ -7,5 +7,11 @@
 offset_right = 800.0
 offset_bottom = 800.0
 scale = Vector2(0.2, 0.2)
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_w5nsr")
+texture_pressed = ExtResource("1_w5nsr")
+texture_hover = ExtResource("1_w5nsr")
+texture_focused = ExtResource("1_w5nsr")
 script = ExtResource("2_c3sxp")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

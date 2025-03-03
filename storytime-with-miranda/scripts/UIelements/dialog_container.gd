@@ -1,4 +1,4 @@
-extends PanelContainer
+extends TabContainer
 
 class_name DialogContainer
 
@@ -7,8 +7,8 @@ class_name DialogContainer
 @onready var dialog_text: RichTextLabel = $CharacterName/MarginContainer/DialogText
 
 # Set the character name
-func set_character_name(name: String) -> void:
-	character_name.name = name
+func set_character_name(input_name: String) -> void:
+	character_name.name = input_name
 
 # Play the dialog
 func play_dialog() -> void:
