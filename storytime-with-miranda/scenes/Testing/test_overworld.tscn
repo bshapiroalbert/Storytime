@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dskjoyskmf5wy"]
+[gd_scene load_steps=6 format=3 uid="uid://dskjoyskmf5wy"]
 
 [ext_resource type="PackedScene" uid="uid://vvxt0nv84suv" path="res://scenes/UIelements/dialog_container.tscn" id="1_0r2r0"]
 [ext_resource type="PackedScene" uid="uid://b3down3qi0uoe" path="res://scenes/UIelements/location_button.tscn" id="1_3tsui"]
 [ext_resource type="PackedScene" uid="uid://crredqloqyo77" path="res://scenes/UIelements/response_container.tscn" id="2_snygo"]
 [ext_resource type="PackedScene" uid="uid://7p5l1ub3ys20" path="res://scenes/Characters/stickman.tscn" id="4_o6haw"]
+[ext_resource type="PackedScene" uid="uid://707k1gbrxh3w" path="res://scenes/Characters/stickwoman.tscn" id="5_hi8q1"]
 
 [node name="TestOverworld" type="Node2D"]
 
@@ -30,4 +31,8 @@ offset_bottom = 802.0
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="Stickman" parent="Characters" instance=ExtResource("4_o6haw")]
+visible = false
 position = Vector2(400, 20)
+
+[node name="Stickwoman" parent="Characters" instance=ExtResource("5_hi8q1")]
+visible = false

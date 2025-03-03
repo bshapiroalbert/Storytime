@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 SceneManager="*res://scenes/gamemanagement/scene_manager.tscn"
+GlobalProperties="*res://scenes/gamemanagement/global_properties.tscn"
+TestDialogSystem="*res://scenes/Testing/test_dialog_system.tscn"
 
 [display]
 
