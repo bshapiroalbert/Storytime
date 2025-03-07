@@ -73,21 +73,21 @@ func clip_and_split_dialog(message):
 		message_array.append(split_message)
 	return message_array
 
-func start_dialog(npc_name, target):
+func start_dialog(target):
 	dialog_target = target
-	dialog_target_name = npc_name
+	dialog_target_name = target.character_name
 	# Make sure NPC has dialog to say
-	if all_dialog[npc_name] == null:
-		push_error("ERROR - no dialog for " + npc_name)
+	if all_dialog[dialog_target_name] == null:
+		push_error("ERROR - no dialog for " + dialog_target_name)
 		return
 	else:
-		npc_dialog = all_dialog[npc_name]["Dialog"]
+		npc_dialog = all_dialog[dialog_target_name]["Dialog"]
 		# Split up into messages
 		var message_array = clip_and_split_dialog(str(npc_dialog["Start"]))
 		message_array_length = message_array.size()
 		if message_array_length == 1 or message_idx == null:
 			message_idx = 0
-		dialog_container.set_character_name(npc_name)
+		dialog_container.set_character_name(dialog_target_name)
 		dialog_container.set_dialog_text(message_array[message_idx])
 		open()
 		# Check if reponse is necessary
@@ -191,21 +191,8 @@ func _resolve_dialog_result(target_name, target):
 		finish_dialog()
 		return
 	# Now have lots of different functions depending on the result
-	# If the response lets the character join the party, let them join
-	if result_command == "JoinParty":
-		if target.is_in_group("PartyMember"):
-			# Set some values to show the next dialog
-			next_response = "Result"
-			npc_dialog[next_response] = "%s joined the party!" % [target.character_name]
-			next_dialog(next_response, response_level)
-			# Call the join party function
-			target.join_party()
-		else:
-			push_error("Target not a party member option: %s" % [target_name])
-	
-	# Other options could include getting an item or changing some variable somewhere
-	else:
-		push_error("No active resolution key found for result: %s" % [result_command])
+	#else:
+	#	push_error("No active resolution key found for result: %s" % [result_command])
 
 func _get_next_response(button) -> void:
 	# Get pressed response

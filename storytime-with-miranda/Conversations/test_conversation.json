@@ -1,5 +1,5 @@
 {
-	"NPC1" : 
+	"Stickman" : 
 	{ "Dialog" : 
 		{
 		"Start" : "Hi, welcome to my cabin. Can I get you a drink weary traveller? Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.",
@@ -10,7 +10,7 @@
 		}
 	},
 	
-	"Party Member 2" :
+	"Stickwoman" :
 	{ "Dialog" :
 		{
 		"Start" : "Can I join you in your quest?",

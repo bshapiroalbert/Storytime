@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv50ojcioyy1f"]
+
+[ext_resource type="Script" path="res://scripts/gamemanagement/character_manager.gd" id="1_3qggl"]
+
+[node name="CharacterManager" type="Node2D"]
+script = ExtResource("1_3qggl")
+Characters = {
+"Stickman": "res://scenes/Characters/stickman.tscn",
+"Stickwoman": "res://scenes/Characters/stickwoman.tscn"
+}
