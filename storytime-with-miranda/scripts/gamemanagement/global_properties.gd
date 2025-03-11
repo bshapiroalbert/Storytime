@@ -22,6 +22,15 @@ var current_scene = SceneManager.m_CurrentSceneAlias # Might just want the alias
 var load_scene
 
 """
+#### Manage global variables
+"""
+func change_dialog_status() -> void:
+	if dialog_is_active:
+		dialog_is_active = false
+	else:
+		dialog_is_active = true
+
+"""
 #### Package, Load, and Save Player Properties ####
 """
 

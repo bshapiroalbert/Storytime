@@ -1,5 +1,5 @@
 {
-	"Stickman" : 
+	"tickman2" : 
 	{ "Dialog" : 
 		{
 		"Start" : "Hi, welcome to my cabin. Can I get you a drink weary traveller? Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.",
@@ -7,6 +7,13 @@
 		"Response B" : "No",
 		"A" : "Excellent. Please, go right on inside.",
 		"B" : "As you wish. Safe travels."
+		}
+	},
+	
+	"Stickman" : 
+	{ "Dialog" : 
+		{
+		"Start" : "Hi, welcome to my cabin. Can I get you a drink weary traveller? Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap. Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.Also here's a bunch of extra text to try to get the text to overfill the box. blah lbah blah blah. And also some other crap.",
 		}
 	},
 	

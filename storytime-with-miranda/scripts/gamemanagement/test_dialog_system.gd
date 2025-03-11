@@ -17,7 +17,7 @@ var response_level
 var message_idx = 0
 var show_response = false # determine if we should show the responses or not yet
 var more_responses = true # true if there are any more dialog responses
-var dialog_box_char_limit = 145 # hard counted limit for now
+var dialog_box_char_limit = 700 # hard counted limit for now
 var message_array_length
 var dialog_target # the NPC, potential party member, etc. we're talking to
 var dialog_target_name: String
@@ -43,7 +43,14 @@ func read_dialog(dialog_file):
 	return json_as_dict
 
 func _ready():
+	end_dialog.connect(GlobalProperties.change_dialog_status)
 	all_dialog = read_dialog(main_dialog_file)
+
+func _input(event):
+	# Input event for continueing dialog
+	if dialog_container.visible:
+		if event.is_action_pressed("ui_accept"):
+			continue_dialog()
 
 # function to break text into arrays to display
 func clip_and_split_dialog(message):
@@ -119,7 +126,7 @@ func next_dialog(next_reply, response_idx) -> void:
 	if message_array_length == 1:
 			message_idx = 0
 	dialog_container.set_dialog_text(message_array[message_idx])
-	$"../AnimationPlayer".play("typewriter")
+	dialog_container.animation_player.play("typewriter")
 	# Check if reponse is necessary
 	if message_array_length == (message_idx + 1) and next_reply != "Result":
 		if response_idx == null:
@@ -141,8 +148,8 @@ func next_dialog(next_reply, response_idx) -> void:
 
 func continue_dialog():
 	# Check if animation is playing and if so end it early and show all text
-	if $"../AnimationPlayer".is_playing():
-		$"../AnimationPlayer".advance(1) # advance to the max length of typewriter animation, 1 second
+	if dialog_container.animation_player.is_playing():
+		dialog_container.animation_player.advance(1) # advance to the max length of typewriter animation, 1 second
 		return
 	# Check if waiting for a response. If so, do nothing
 	if response_container.visible == true:
