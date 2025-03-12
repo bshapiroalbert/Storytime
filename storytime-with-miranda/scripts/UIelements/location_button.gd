@@ -15,3 +15,4 @@ func _on_pressed():
 		var dialog_target_character : Character = CharacterManager.choose_character()
 		activate_dialoge.emit()
 		start_dialog.emit(dialog_target_character)
+		release_focus()

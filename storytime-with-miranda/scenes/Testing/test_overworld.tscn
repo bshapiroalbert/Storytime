@@ -1,27 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dskjoyskmf5wy"]
+[gd_scene load_steps=5 format=3 uid="uid://dskjoyskmf5wy"]
 
-[ext_resource type="PackedScene" uid="uid://vvxt0nv84suv" path="res://scenes/UIelements/dialog_container.tscn" id="1_0r2r0"]
 [ext_resource type="PackedScene" uid="uid://b3down3qi0uoe" path="res://scenes/UIelements/location_button.tscn" id="1_3tsui"]
-[ext_resource type="PackedScene" uid="uid://crredqloqyo77" path="res://scenes/UIelements/response_container.tscn" id="2_snygo"]
 [ext_resource type="Script" path="res://scripts/gamemanagement/character_container.gd" id="4_2af85"]
 [ext_resource type="PackedScene" uid="uid://7p5l1ub3ys20" path="res://scenes/Characters/stickman.tscn" id="4_o6haw"]
 [ext_resource type="PackedScene" uid="uid://707k1gbrxh3w" path="res://scenes/Characters/stickwoman.tscn" id="5_hi8q1"]
 
 [node name="TestOverworld" type="Node2D"]
-
-[node name="DialogContainer" parent="." instance=ExtResource("1_0r2r0")]
-visible = false
-offset_left = 85.0
-offset_top = 526.0
-offset_right = 1165.0
-offset_bottom = 706.0
-
-[node name="ResponseContainer" parent="." instance=ExtResource("2_snygo")]
-visible = false
-offset_left = 1025.0
-offset_top = 407.0
-offset_right = 1145.0
-offset_bottom = 527.0
 
 [node name="LocationButton" parent="." instance=ExtResource("1_3tsui")]
 offset_left = 3.00003

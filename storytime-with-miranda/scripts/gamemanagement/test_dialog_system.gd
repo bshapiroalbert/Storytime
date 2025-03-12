@@ -2,7 +2,7 @@ extends Node2D
 
 # Child variables to access
 @onready var dialog_layer: CanvasLayer = $DialogLayer
-@onready var dialog_container: DialogContainer = $DialogLayer/DialogContainer
+@onready var dialog_container: DialogPanel = $DialogLayer/DialogContainer
 @onready var response_container: ResponseContainer = $DialogLayer/ResponseContainer
 
 # Variables to get conversations from
@@ -127,6 +127,7 @@ func next_dialog(next_reply, response_idx) -> void:
 			message_idx = 0
 	dialog_container.set_dialog_text(message_array[message_idx])
 	dialog_container.animation_player.play("typewriter")
+	#dialog_container.play_dialog()
 	# Check if reponse is necessary
 	if message_array_length == (message_idx + 1) and next_reply != "Result":
 		if response_idx == null:
