@@ -83,6 +83,9 @@ func clip_and_split_dialog(message):
 func start_dialog(target):
 	dialog_target = target
 	dialog_target_name = target.character_name
+	# Show the character
+	if target in CharacterManager.active_characters and not target.visible:
+		target.show()
 	# Make sure NPC has dialog to say
 	if all_dialog[dialog_target_name] == null:
 		push_error("ERROR - no dialog for " + dialog_target_name)
@@ -184,6 +187,10 @@ func finish_dialog() -> void:
 	last_response = "Start"
 	dialog_target_name = ""
 	result_finished = false
+	# hide any shown characters
+	for character in CharacterManager.active_characters:
+		if character.visible:
+			character.hide()
 	# now reset dialog variable for player
 	end_dialog.emit()
 
