@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://707k1gbrxh3w"]
 
-[ext_resource type="Script" path="res://scripts/Characters/character.gd" id="1_kiwkp"]
+[ext_resource type="Script" uid="uid://v0ppkmlggw3n" path="res://scripts/Characters/character.gd" id="1_kiwkp"]
 [ext_resource type="Texture2D" uid="uid://cwnfapryt6dhg" path="res://Textures/Images/Testing/Stickwoman.png" id="2_obook"]
 
 [node name="Stickwoman" type="Sprite2D"]

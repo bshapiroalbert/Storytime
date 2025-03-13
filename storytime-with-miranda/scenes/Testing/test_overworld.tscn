@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dskjoyskmf5wy"]
 
 [ext_resource type="PackedScene" uid="uid://b3down3qi0uoe" path="res://scenes/UIelements/location_button.tscn" id="1_3tsui"]
-[ext_resource type="Script" path="res://scripts/gamemanagement/character_container.gd" id="4_2af85"]
+[ext_resource type="Script" uid="uid://dac1d7nc81sq3" path="res://scripts/gamemanagement/character_container.gd" id="4_2af85"]
 [ext_resource type="PackedScene" uid="uid://7p5l1ub3ys20" path="res://scenes/Characters/stickman.tscn" id="4_o6haw"]
 [ext_resource type="PackedScene" uid="uid://707k1gbrxh3w" path="res://scenes/Characters/stickwoman.tscn" id="5_hi8q1"]
 

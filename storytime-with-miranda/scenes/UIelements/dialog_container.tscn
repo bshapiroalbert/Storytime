@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://vvxt0nv84suv"]
 
 [ext_resource type="StyleBox" uid="uid://b4uiccqk4v6cj" path="res://scenes/UIelements/styleboxes/DialogContainerNameTab.tres" id="1_m6g2e"]
-[ext_resource type="Script" path="res://scripts/UIelements/dialog_container.gd" id="1_xgdsv"]
+[ext_resource type="Script" uid="uid://f41x41bqjtd0" path="res://scripts/UIelements/dialog_container.gd" id="1_xgdsv"]
 [ext_resource type="StyleBox" uid="uid://d3d8xmfga0r8d" path="res://scenes/UIelements/styleboxes/DialogContainerStyleBox.tres" id="3_g33gv"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c5bta"]
@@ -39,8 +39,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ygoxn"]
 _data = {
-"RESET": SubResource("Animation_gx1xp"),
-"typewriter": SubResource("Animation_jeqid")
+&"RESET": SubResource("Animation_gx1xp"),
+&"typewriter": SubResource("Animation_jeqid")
 }
 
 [node name="DialogContainer" type="Panel"]

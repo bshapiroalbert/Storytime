@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bpuwp7olsujtb"]
 
-[ext_resource type="Script" path="res://scripts/UIelements/response_button.gd" id="1_riv81"]
+[ext_resource type="Script" uid="uid://bnlxbeksk8qry" path="res://scripts/UIelements/response_button.gd" id="1_riv81"]
 
 [node name="ResponseButton" type="Button"]
 offset_right = 200.0

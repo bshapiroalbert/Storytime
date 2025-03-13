@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://7p5l1ub3ys20"]
 
-[ext_resource type="Script" path="res://scripts/Characters/character.gd" id="1_7vlff"]
+[ext_resource type="Script" uid="uid://v0ppkmlggw3n" path="res://scripts/Characters/character.gd" id="1_7vlff"]
 [ext_resource type="Texture2D" uid="uid://vo4qxktlt5ib" path="res://Textures/Images/Testing/Stickman.png" id="2_6tra2"]
 
 [node name="Stickman" type="Sprite2D"]

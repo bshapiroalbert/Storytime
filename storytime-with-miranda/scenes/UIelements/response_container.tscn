@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://crredqloqyo77"]
 
-[ext_resource type="Script" path="res://scripts/UIelements/response_container.gd" id="1_smrrb"]
+[ext_resource type="Script" uid="uid://bf8q12k56twx6" path="res://scripts/UIelements/response_container.gd" id="1_smrrb"]
 [ext_resource type="PackedScene" uid="uid://bpuwp7olsujtb" path="res://scenes/UIelements/response_button.tscn" id="2_c6ycn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7wwfg"]
